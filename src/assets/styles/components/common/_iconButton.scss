@@ -1,0 +1,35 @@
+.iconButton {
+  height: 40px;
+  width: 40px;
+  border-radius: $rounded_md;
+  border: $primary-border;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.iconButton.primary {
+  background-color: $primary-faded;
+  color: $primary;
+  &:hover {
+    color: white;
+    background-color: $primary;
+  }
+}
+.iconButton.brick {
+  background-color: $brick-faded;
+  color: $brick;
+  &:hover {
+    color: white;
+    background-color: $brick;
+  }
+}
+.iconButton.secondary {
+  background-color: $secondary-faded;
+  color: $secondary;
+  &:hover {
+    color: white;
+    background-color: $secondary;
+  }
+}

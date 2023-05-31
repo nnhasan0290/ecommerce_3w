@@ -1,0 +1,15 @@
+.button {
+  width: 100%;
+  padding: 0.5rem;
+  border: $primary-border;
+  border-radius: $rounded_md;
+  transition: all 0.3s;
+  color: #fff !important;
+  &:hover {
+    transform: translateY(-1px) !important;
+  }
+}
+
+.button.primary {
+  background-color: $primary;
+}

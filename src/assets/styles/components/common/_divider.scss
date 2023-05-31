@@ -1,0 +1,11 @@
+.divider{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    font-size: $fs-small;
+    width: 100%;
+    .divider__border{
+        flex-grow: 1;
+        border-top: $primary-border
+    }
+}

@@ -1,0 +1,19 @@
+.input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: .5rem;
+    .input__label{
+        text-transform: uppercase;
+        font-size: $fs-small;
+    }
+    .input__field{
+        padding: .5rem;
+        width: 100%;
+        border-radius: $rounded_md;
+        border: $primary-border;
+        &:focus{
+          border: $active-border
+        }
+    }
+}
