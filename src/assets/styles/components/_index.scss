@@ -4,11 +4,15 @@
 @import "./common/iconButton";
 @import "./common/textLink";
 @import "./common/heading";
+@import "./common/avatar";
 
 
 
 @import "./client/registryform";
 @import "./client/forgetPass";
+@import "./client/header/header";
+@import "./client/header/topbar";
+@import "./client/header/mobileHeader";
 
 
 @import "./layouts/authlayout"

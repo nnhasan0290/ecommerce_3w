@@ -1,0 +1,15 @@
+.topbar {
+  background-color: $bg-secondary;
+  font-size: $fs-small;
+  text-transform: uppercase;
+  @include largeTablet{
+    display: none;
+  }
+  .topbar__inner {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-end;
+    padding: 0.2rem 0;
+  }
+}

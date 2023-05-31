@@ -2,4 +2,8 @@
   color: $primary;
   text-transform: capitalize;
   cursor: pointer;
+  transition: all 0.3s;
+  &:hover{
+    text-decoration: underline;
+  }
 }

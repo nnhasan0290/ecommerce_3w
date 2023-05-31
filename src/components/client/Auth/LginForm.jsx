@@ -5,7 +5,7 @@ import Button from "../../common/Button";
 
 const LoginForm = () => {
   return (
-    <form action="">
+    <form action="" className="registration__form">
       <Input label={"email"} type={"email"} />
       <div className="password">
         <Input label="Password" type={"password"} />

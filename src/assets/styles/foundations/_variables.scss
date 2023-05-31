@@ -73,6 +73,7 @@ $bg-lime: #acdb93;
 $bg-blue-light: #55acce;
 $bg-lime-gradient: rgba(85, 172, 206, 0.2);
 $bg-blue-green-gradient: linear-gradient(90deg, #55acce 0%, #acdb93 100%);
+$bg-secondary: rgba(158,158,158,.2);
 
 /* text color */
 $text-grey: #7b809a;
@@ -155,16 +156,6 @@ $rounded_md: 0.375rem;
 $rounded_sm: 0.125rem;
 $rounded_full: 50%;
 
-//paddings
-$p-0: 0;
-$p-1: 0.25rem;
-$p-2: 0.5rem;
-$p-3: 0.75rem;
-$p-4: 1rem;
 
-//Margins
-$m-0: 0;
-$m-1: 0.25rem;
-$m-2: 0.5rem;
-$m-3: 0.75rem;
-$m-4: 1rem;
+//shadow
+$primary-shadow: 0 0 15px rgb(0 0 0 / 15%);

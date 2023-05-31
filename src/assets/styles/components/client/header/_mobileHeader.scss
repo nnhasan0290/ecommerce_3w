@@ -1,0 +1,13 @@
+.mobileHeader {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: none;
+  background-color: $bg-secondary;
+  padding: .2rem 0;
+  @include largeTablet {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

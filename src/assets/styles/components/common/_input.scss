@@ -1,11 +1,9 @@
 .input{
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    gap: .5rem;
     .input__label{
         text-transform: uppercase;
         font-size: $fs-small;
+        margin-bottom: .5rem;
     }
     .input__field{
         padding: .5rem;

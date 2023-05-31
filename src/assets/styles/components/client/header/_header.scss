@@ -1,0 +1,39 @@
+.mainHeader {
+  border-bottom: $primary-border;
+  padding: 0.2rem 0;
+  text-transform: capitalize;
+  box-shadow: $primary-shadow;
+  @include largeTablet {
+    display: none;
+  }
+  .mainHeader__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    align-items: center;
+    .mainHeader__form {
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+      align-items: stretch;
+      input {
+        border: none;
+        background-color: $bg-secondary;
+        width: 400px;
+        border-radius: $rounded-md 0 0 $rounded-md;
+        padding-left: 1rem;
+      }
+      span {
+        height: 45px;
+        width: 45px;
+        background-color: $primary;
+        border-radius: 0 $rounded-md $rounded-md 0;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+    }
+  }
+}

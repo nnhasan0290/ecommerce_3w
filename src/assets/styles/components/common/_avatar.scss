@@ -1,0 +1,18 @@
+.avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: $primary-border;
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+
+}
+
+.avatar.sm{
+  height: 40px;
+  width: 40px;
+}

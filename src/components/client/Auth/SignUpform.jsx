@@ -3,7 +3,7 @@ import Input from "../../common/Input";
 
 const SignUpForm = () => {
   return (
-    <form>
+    <form className="registration__form">
       <Input label={"Full Name"} />
       <Input label={"email"} type={"email"} />
       <Input label="Password" type={"password"} />
