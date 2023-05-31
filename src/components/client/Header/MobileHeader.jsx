@@ -4,7 +4,7 @@ import Avatar from "../../common/Avatar";
 
 const MobileHeader = () => {
   return (
-    <div className="mobileHeader">
+    <div className={`mobileHeader `}>
       <IoMdHome size={25} />
       <HiShoppingCart size={25} />
       <Avatar size={"sm"} />

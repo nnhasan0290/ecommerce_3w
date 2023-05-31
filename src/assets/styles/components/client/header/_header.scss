@@ -35,5 +35,43 @@
         cursor: pointer;
       }
     }
+    .mainHeader_user {
+      position: relative;
+    }
+    .mainHeader__dropdown {
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s;
+      div {
+        padding: 1rem 2rem;
+        border-bottom: $primary-border;
+        white-space: nowrap;
+        list-style: none;
+        cursor: pointer;
+        &:hover{
+          color: $primary;
+          text-decoration: underline;
+          background-color: $bg-secondary
+        }
+      }
+    }
+    .mainHeader__cart{
+      position: relative;
+      cursor: pointer;
+      .mainHeader__cart__badge{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $primary;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: $rounded_full;
+        transform: translate(40%, -40%);
+        color: white;
+      }
+    }
   }
 }

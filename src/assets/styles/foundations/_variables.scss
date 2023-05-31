@@ -159,3 +159,19 @@ $rounded_full: 50%;
 
 //shadow
 $primary-shadow: 0 0 15px rgb(0 0 0 / 15%);
+
+
+$defaultAnimation: getDown 0.3s ease-in;
+
+@keyframes getDown {
+  0% {
+    transform: scaleY(0);
+  }
+  80% {
+    transform: scaleY(1.1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+

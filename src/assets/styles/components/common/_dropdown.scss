@@ -1,0 +1,11 @@
+.dropdown{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 150px;
+    border: $primary-border;
+    border-radius: $rounded-md;
+    background-color: white;
+    animation: $defaultAnimation;
+    transform-origin: top center;
+}

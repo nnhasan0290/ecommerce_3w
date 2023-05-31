@@ -1,8 +1,8 @@
 import { FcBusinessman } from "react-icons/fc";
 
-const Avatar = ({ img, size }) => {
+const Avatar = ({ img, size, onClick }) => {
   return (
-    <div className={`avatar ${size} `}>
+    <div onClick={onClick} className={`avatar ${size} `}>
       {!img ? <FcBusinessman size={45} /> : <img src={img} alt="img" />}
     </div>
   );
