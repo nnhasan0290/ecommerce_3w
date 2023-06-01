@@ -3,7 +3,7 @@ import { BsSearch } from "react-icons/bs";
 import Avatar from "../../common/Avatar";
 import MobileHeader from "./MobileHeader";
 import Dropdown from "../../common/Dropdown";
-import { HiShoppingCart } from "react-icons/hi2";
+import { HiOutlineShoppingCart } from "react-icons/hi2";
 import { useRef, useState } from "react";
 import useOutsideClickHandler from "../../../utils/useClickOutside";
 
@@ -27,8 +27,8 @@ const Header = () => {
             </span>
           </form>
           <div className="mainHeader__cart">
-            <HiShoppingCart size={32} />
-            <span className="mainHeader__cart__badge">12</span>
+            <HiOutlineShoppingCart size={32} />
+            <span className="mainHeader__cart__badge">2</span>
           </div>
           <div className="mainHeader_user" ref={dropdownRef}>
             <Avatar

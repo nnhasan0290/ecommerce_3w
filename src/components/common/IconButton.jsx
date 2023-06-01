@@ -1,7 +1,7 @@
 
-const IconButton = ({icon, color}) => {
+const IconButton = ({icon, color, onClick, fullRounded}) => {
   return (
-    <div className={`iconButton ${color ? color : "primary"}`}>
+    <div onClick={onClick} className={`iconButton ${color ? color : "primary"} ${fullRounded && "fullRonded"}`}>
         {icon}
     </div>
   );

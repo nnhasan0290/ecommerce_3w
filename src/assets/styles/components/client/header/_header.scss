@@ -26,13 +26,17 @@
       span {
         height: 45px;
         width: 45px;
-        background-color: $primary;
+        background-color: $primary-md-faded;
         border-radius: 0 $rounded-md $rounded-md 0;
         color: white;
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        transition: all 0.3s;
+        &:hover{
+          background-color: $primary;
+        }
       }
     }
     .mainHeader_user {
@@ -58,6 +62,9 @@
     .mainHeader__cart{
       position: relative;
       cursor: pointer;
+      &:hover{
+        color: $primary;
+      }
       .mainHeader__cart__badge{
         position: absolute;
         top: 0;

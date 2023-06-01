@@ -6,6 +6,7 @@ import Heading from "../../common/Heading";
 import { useState } from "react";
 import SignUpForm from "./SignUpform";
 import LoginForm from "./LginForm";
+import GoogleProvider from "./SocialLogin/Google";
 
 const RegistryForm = () => {
   const [signupState, setSignupState] = useState(false);
@@ -28,7 +29,7 @@ const RegistryForm = () => {
       {/* Social icon area */}
       <div className="form__icons">
         <IconButton icon={<ImFacebook />} color="primary" />
-        <IconButton icon={<ImGoogle />} color="brick" />
+      <GoogleProvider/>
         <IconButton icon={<ImGithub />} color="secondary" />
       </div>
     </>

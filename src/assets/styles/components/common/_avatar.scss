@@ -9,7 +9,9 @@
   justify-content: center;
   cursor: pointer;
   overflow: hidden;
-
+  &:hover{
+    border: 1px solid $primary;
+  }
 }
 
 .avatar.sm{
