@@ -15,7 +15,8 @@ function SampleNextArrow(props) {
         position: "absolute",
         right: 0,
         top: "50%",
-        transform: "translate(101%,-50%)",
+        transform: "translate(50%,-50%)",
+        zIndex: 1
       }}
     >
       <IconButton icon={<BsChevronRight />} color={"secondary"} fullRounded />
@@ -32,7 +33,8 @@ function SamplePrevArrow(props) {
         position: "absolute",
         left: 0,
         top: "50%",
-        transform: "translate(-101%,-50%)",
+        transform: "translate(-50%,-50%)",
+        zIndex:1
       }}
     >
       <IconButton icon={<BsChevronLeft />} color={"secondary"} fullRounded />

@@ -1,5 +1,5 @@
-const TextLink = ({ children, onClick }) => {
-  return <span onClick={onClick} className="textLink">{children}</span>;
+const TextLink = ({ children, onClick, gray }) => {
+  return <span onClick={onClick} className={`textLink ${gray && 'gray'}`}>{children}</span>;
 };
 
 export default TextLink;
