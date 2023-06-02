@@ -3,7 +3,13 @@
   text-transform: capitalize;
   cursor: pointer;
   transition: all 0.3s;
-  &:hover{
+  &:hover {
     text-decoration: underline;
+  }
+}
+.textLink.gray {
+  color: $primary-color;
+  &:hover {
+    color: $primary;
   }
 }
