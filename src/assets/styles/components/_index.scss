@@ -7,8 +7,6 @@
 @import "./common/avatar";
 @import "./common/dropdown";
 
-
-
 @import "./client/registryform";
 @import "./client/forgetPass";
 @import "./client/header/header";
@@ -16,6 +14,6 @@
 @import "./client/header/mobileHeader";
 
 @import "./client/shop/category";
+@import "./layouts/authlayout";
 
-
-@import "./layouts/authlayout"
+@import "./carousel/carousel";

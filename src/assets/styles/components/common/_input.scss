@@ -1,17 +1,17 @@
-.input{
+.input {
+  width: 100%;
+  .input__label {
+    text-transform: uppercase;
+    // font-size: $fs-small;
+    margin-bottom: 0.5rem;
+  }
+  .input__field {
+    padding: 0.5rem;
     width: 100%;
-    .input__label{
-        text-transform: uppercase;
-        font-size: $fs-small;
-        margin-bottom: .5rem;
+    border-radius: $rounded_md;
+    border: $primary-border;
+    &:focus {
+      border: $active-border;
     }
-    .input__field{
-        padding: .5rem;
-        width: 100%;
-        border-radius: $rounded_md;
-        border: $primary-border;
-        &:focus{
-          border: $active-border
-        }
-    }
+  }
 }
