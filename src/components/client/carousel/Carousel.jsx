@@ -1,5 +1,6 @@
 import React from "react";
 
+// Framer Motion Import
 import { motion } from "framer-motion";
 
 // Import Swiper React components
@@ -9,6 +10,7 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import { Autoplay, Navigation } from "swiper";
 import carousalData from "./data";
+import Button from "../../common/Button";
 
 const Carousel = () => {
   const pagination = {
@@ -47,13 +49,14 @@ const Carousel = () => {
                 >
                   <div className="carousel__itemTitelText">
                     <span>{item.sortText}</span>
-                    <h1>{item.title}</h1>
-                    <h1>{item.title2}</h1>
+                    <span className="h1Text">{item.title}</span>
+                    <span className="h1Text">{item.title2}</span>
+                  </div>
+
+                  <div className="carousal__item__button">
+                    <Button>{item.buttonText}</Button>
                   </div>
                 </motion.div>
-                <div className="carousal__item__button">
-                  <button>{item.buttonText}</button>
-                </div>
               </div>
             </div>
           </SwiperSlide>

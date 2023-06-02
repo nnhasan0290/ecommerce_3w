@@ -17,38 +17,39 @@
 
     .carousal__item__titleAndButton {
       position: absolute;
-      top: 50%;
+      top: 35%;
       left: 10%;
       display: flex;
       flex-direction: column;
 
-      //   @include desktop {
-      //     width: 100%;
-      //   }
+      @include desktop {
+        width: 100%;
+      }
 
       .carousel__itemTitelText {
         display: flex;
         flex-direction: column;
+        gap: 20px;
 
         span {
-          font-size: 18px;
-          font-weight: 600;
+          font-size: 25px;
+          font-weight: 700;
           color: black;
           text-align: left;
-          margin-bottom: 1rem;
         }
 
-        h1 {
-          font-size: 25px;
+        .h1Text {
+          font-size: 35px;
           font-weight: 700;
           color: black;
           text-transform: uppercase;
           text-align: left;
-          margin-bottom: 1rem;
+          letter-spacing: 1.5px;
         }
       }
 
       .carousal__item__button {
+        margin-top: 20px;
         display: flex;
 
         button {
@@ -61,18 +62,18 @@
 
           font-size: 16px;
           font-weight: 600;
-          //   border: 2px solid var(--yellow);
-          //   background: var(--yellow);
-          //   color: var(--text__white);
+          border: 2px solid $yellow;
+          background: $text-yelow;
+          color: $text-white;
           cursor: pointer;
           transition: all 0.3s ease-in-out;
 
           &:hover {
             cursor: pointer;
             background: transparent;
-            // color: var(--yellow);
+            color: $yellow;
             transition: all 0.3s ease-in-out;
-            // color: var(--text__yellow);
+            color: $text-yelow;
           }
         }
       }
@@ -103,11 +104,11 @@
   }
 
   .swiper-pagination-bullet {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     text-align: center;
-    line-height: 30px;
-    font-size: 12px;
+    line-height: 35px;
+    font-size: 16px;
     color: white;
     opacity: 1;
     background: rgba(0, 0, 0, 0.2);
@@ -115,6 +116,6 @@
 
   .swiper-pagination-bullet-active {
     color: #fff;
-    // background: var(--primary-color-pink);
+    background: $text-yelow;
   }
 }

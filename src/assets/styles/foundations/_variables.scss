@@ -40,7 +40,7 @@ $secondary-faded: rgba(108, 117, 125, 0.2);
 $red: red;
 $green: green;
 $pink: pink;
-$yellow: yellow;
+$yellow: #f5c000;
 $blue: #3056d3;
 
 /* Neutral colors */
@@ -53,7 +53,7 @@ $gray: gray;
 
 $green: green;
 $error: red;
-$warning: yellow;
+$warning: #f5c000;
 
 /* background color */
 $bg-black: #000;
@@ -74,13 +74,15 @@ $bg-lime: #acdb93;
 $bg-blue-light: #55acce;
 $bg-lime-gradient: rgba(85, 172, 206, 0.2);
 $bg-blue-green-gradient: linear-gradient(90deg, #55acce 0%, #acdb93 100%);
-$bg-secondary: rgba(158,158,158,.2);
+$bg-secondary: rgba(158, 158, 158, 0.2);
 
 /* text color */
+$text-black: #000;
 $text-grey: #7b809a;
 $text-white: #fff;
 $text-blue: #3056d3;
 $text-green: #acdb93;
+$text-yelow: #f5c000;
 
 /*=====  End of colors  ======*/
 
@@ -100,16 +102,13 @@ $heading-color: #000;
 $fm-open-sans-bold: "Open Sans", sans-serif;
 
 /* Font Weight */
-
 $fw-normal: 400;
 $fw-bold: 700;
 $fw-black: 900;
 
 /* Font Sizes */
-
 $fs-small: 15px;
 $fs-normal: 18px;
-
 $fs-large: 24px;
 
 /*=====  End of typography  ======*/
@@ -118,7 +117,7 @@ $fs-large: 24px;
 =            Border                      =
 =============================================*/
 /* border */
-$primary-border: 1px solid #c7c7c7;
+$primary-border: 1px solid $yellow;
 $active-border: 1px solid $primary;
 
 /* border radius */
@@ -155,13 +154,11 @@ $breakpoints: (
 //border radius
 $rounded_md: 0.375rem;
 $rounded_sm: 0.125rem;
+$rounded_mx: 20px;
 $rounded_full: 50%;
-
 
 //shadow
 $primary-shadow: 0 0 15px rgb(0 0 0 / 15%);
-
-
 $defaultAnimation: getDown 0.2s ease-in;
 
 @keyframes getDown {
@@ -175,4 +172,3 @@ $defaultAnimation: getDown 0.2s ease-in;
     transform: scaleY(1);
   }
 }
-

@@ -1,15 +1,26 @@
 .button {
-  width: 100%;
-  padding: 0.5rem;
+  width: max-content;
+  padding: 10px 15px;
+  box-sizing: border-box;
   border: $primary-border;
-  border-radius: $rounded_md;
-  transition: all 0.3s;
+  border-radius: $rounded_mx;
+  transition: all 0.3s ease-in-out;
   color: #fff !important;
+
+  @include miniPortraitTablet {
+    padding: 5px 10px;
+  }
+
   &:hover {
-    transform: translateY(-1px) !important;
+    transition: all 0.3s ease-in-out;
+    color: $yellow !important;
   }
 }
 
 .button.primary {
-  background-color: $primary;
+  background-color: $yellow;
+
+  &:hover {
+    background-color: $white;
+  }
 }
