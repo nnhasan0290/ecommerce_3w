@@ -1,6 +1,7 @@
-import slide1 from "../../assets/images/carousel/slider1.jpg";
-import slide2 from "../../assets/images/carousel/slider2.jpg";
-import slide3 from "../../assets/images/carousel/slider3.jpg";
+import slide1 from "../../../assets/imgs/carousel/slider1.jpg"
+import slide2 from "../../../assets/imgs/carousel/slider2.jpg"
+import slide3 from "../../../assets/imgs/carousel/slider3.jpg"
+
 
 const carousalData = [
   {

@@ -1,5 +1,4 @@
 import React from "react";
-import "../../../assets/styles/components/_index.scss";
 
 import { motion } from "framer-motion";
 
