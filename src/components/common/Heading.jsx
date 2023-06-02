@@ -1,6 +1,6 @@
-const Heading = ({children}) => {
+const Heading = ({children, sm}) => {
     return(
-        <h2 className="heading">{children}</h2>
+        <h2 className={`heading ${sm && "sm"}`}>{children}</h2>
     )
 }
 

@@ -1,11 +1,11 @@
-.divider{
-    display: flex;
-    gap: .5rem;
-    align-items: center;
-    font-size: $fs-small;
-    width: 100%;
-    .divider__border{
-        flex-grow: 1;
-        border-top: $primary-border
-    }
+.divider {
+  font-size: $fs-small;
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  .divider__border {
+    flex-grow: 1;
+    border-top: $primary-border;
+  }
 }
