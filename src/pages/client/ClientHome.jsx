@@ -6,6 +6,7 @@ import offerBg1 from "../../assets/imgs/client/offerCardBg/banner-1.jpg";
 import offerBg2 from "../../assets/imgs/client/offerCardBg/banner-3.jpg";
 
 import Button from "../../components/common/Button";
+import ShopByCategory from "../../components/client/shopByCategory/ShopByCategory";
 
 const ClientHome = () => {
   return (
@@ -40,6 +41,10 @@ const ClientHome = () => {
             </div>
           </div>
         </div>
+      </Wrapper>
+
+      <Wrapper>
+        <ShopByCategory />
       </Wrapper>
     </div>
   );
