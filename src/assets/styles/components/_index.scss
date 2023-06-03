@@ -6,14 +6,17 @@
 @import "./common/heading";
 @import "./common/avatar";
 @import "./common/dropdown";
+@import "./common/wrapper";
 
 @import "./client/registryform";
 @import "./client/forgetPass";
 @import "./client/header/header";
 @import "./client/header/topbar";
 @import "./client/header/mobileHeader";
-@import "./client/carousel/carousel";
-@import "./common/wrapper";
 @import "./client/shop/category";
-@import "./layouts/authlayout";
+@import "./client/shop/sidebar";
+
+@import "./client/carousel/carousel";
 @import "./client/shopByCategory/shopByCategory";
+
+@import "./layouts/authlayout";
