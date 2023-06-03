@@ -24,12 +24,12 @@ const RegistryForm = () => {
           {signupState ? "Sign In" : "Create an Account"}
         </TextLink>
       </div>
-      <Divider />
+      <Divider>OR</Divider>
 
       {/* Social icon area */}
       <div className="form__icons">
         <IconButton icon={<ImFacebook />} color="primary" />
-      <GoogleProvider/>
+        <GoogleProvider />
         <IconButton icon={<ImGithub />} color="secondary" />
       </div>
     </>

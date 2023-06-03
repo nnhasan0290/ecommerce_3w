@@ -35,6 +35,7 @@ $primary-faded: rgba(0, 123, 255, 0.2);
 $primary-md-faded: rgba(0, 123, 255, 0.7);
 $brick-faded: rgba(221, 75, 57, 0.2);
 $secondary-faded: rgba(108, 117, 125, 0.2);
+$yellow-faded: rgba(245, 192, 0, 0.2);
 
 /* Brand colors */
 $red: red;
@@ -117,8 +118,9 @@ $fs-large: 24px;
 =            Border                      =
 =============================================*/
 /* border */
-$primary-border: 1px solid $yellow;
+$primary-border: .5px solid $yellow;
 $active-border: 1px solid $primary;
+$secondary-border: 1px solid #ececec;
 
 /* border radius */
 $border-radius-1: 12px;
