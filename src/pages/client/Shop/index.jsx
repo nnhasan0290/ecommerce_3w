@@ -1,4 +1,5 @@
 import Category from "../../../components/client/Shop/Category";
+import Products from "../../../components/client/Shop/Products";
 import Sidebar from "../../../components/client/Shop/Sidebar";
 
 const Shop = () => {
@@ -8,8 +9,9 @@ const Shop = () => {
       {/*category*/}
       <Category />
       <div className="shop__main">
-      {/*sidebar*/}
-       <Sidebar/>
+        {/*sidebar*/}
+        <Sidebar />
+        <Products />
       </div>
       {/*Products*/}
     </div>

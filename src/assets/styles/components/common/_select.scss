@@ -1,0 +1,50 @@
+.select {
+  width: 200px;
+  position: relative;
+  .select__input {
+    position: relative;
+    input {
+      border: $primary-border;
+      padding: 0.5rem;
+      border-radius: $rounded_md;
+      width: 100%;
+      color: $yellow;
+      cursor: pointer;
+    }
+    .select__icon {
+      display: flex;
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+    .turnup {
+      transform: translateY(-50%) rotate(-180deg);
+    }
+  }
+  .select__items {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: $primary-shadow;
+    animation: $defaultAnimation;
+    .select__single {
+      list-style: none;
+      padding: 0.8rem;
+      width: 100%;
+      cursor: pointer;
+      &:hover {
+        background-color: $bg-secondary;
+        color: $yellow;
+      }
+    }
+    .select__single.active {
+      background-color: $bg-secondary;
+      color: $yellow;
+    }
+  }
+}
