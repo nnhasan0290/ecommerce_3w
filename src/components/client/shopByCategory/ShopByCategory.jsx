@@ -1,12 +1,57 @@
 import React from "react";
-import Wrapper from "../../common/Wrapper";
+
+// Import Swiper styles
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+// import required modules
+import { FreeMode, Pagination, Navigation, Autoplay } from "swiper";
+
+import sb1 from "../../../assets/imgs/client/shopByCategory/sb_cat1.jpg";
+import sb2 from "../../../assets/imgs/client/shopByCategory/sb_cat3.jpg";
+
+import shopByCatData from "./shopByCatData";
 
 const ShopByCategory = () => {
   return (
     <div className="shopByCategory">
-      <div className="header">
+      <div className="shopByCategory__header">
         <span>Shop By Category</span>
       </div>
+
+      <Swiper
+        className="shopByCategory__Container"
+        slidesPerView={6}
+        spaceBetween={30}
+        freeMode={true}
+        loop={true}
+        navigation={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[FreeMode, Autoplay, Navigation]}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+      >
+        {shopByCatData.map((item, index) => {
+          return (
+            <SwiperSlide className="shopByCategory__card">
+              <div className="shopByCategory__card__img">
+                <img src={item.image} alt="" />
+              </div>
+
+              <div className="shopByCategory__card__layer">
+                <span>{item.catName}</span>
+              </div>
+
+              <div className="shopByCategory__card__text">{item.itemCount}</div>
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
     </div>
   );
 };
