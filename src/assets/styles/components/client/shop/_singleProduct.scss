@@ -1,6 +1,10 @@
 .product {
   padding: 0.5rem;
   transition: all 0.3s;
+  @include largeTablet {
+    border: $primary-border;
+    border-radius: $rounded_md;
+  }
   &:hover {
     box-shadow: $primary-shadow;
   }

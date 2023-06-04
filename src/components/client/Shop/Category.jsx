@@ -1,10 +1,7 @@
-import {
-  BsChevronLeft,
-  BsChevronRight,
-} from "react-icons/bs";
+import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import Slider from "react-slick";
 import IconButton from "../../common/IconButton";
-import TextLink from "../../common/TextLink"
+import TextLink from "../../common/TextLink";
 
 function SampleNextArrow(props) {
   const { onClick } = props;
@@ -16,7 +13,7 @@ function SampleNextArrow(props) {
         right: 0,
         top: "50%",
         transform: "translate(50%,-50%)",
-        zIndex: 1
+        zIndex: 1,
       }}
     >
       <IconButton icon={<BsChevronRight />} color={"yellow"} fullRounded />
@@ -34,7 +31,7 @@ function SamplePrevArrow(props) {
         left: 0,
         top: "50%",
         transform: "translate(-50%,-50%)",
-        zIndex:1
+        zIndex: 1,
       }}
     >
       <IconButton icon={<BsChevronLeft />} color={"yellow"} fullRounded />
@@ -52,51 +49,80 @@ const settings = {
 };
 const Category = () => {
   return (
-    <Slider {...settings} className="slider">
-      <div className="slider__single">
-        <img src="https://static-01.daraz.com.bd/p/c54fca7fbaf5ff2def40ce7a48edeaad.jpg" alt="" />
-        <TextLink>Name</TextLink>
-        
-      </div>
-      <div className="slider__single">
-        <img src="https://static-01.daraz.com.bd/p/c54fca7fbaf5ff2def40ce7a48edeaad.jpg" alt="" />
-        <TextLink>Name</TextLink>
-      </div>
-      <div className="slider__single">
-        <img src="https://static-01.daraz.com.bd/p/c54fca7fbaf5ff2def40ce7a48edeaad.jpg" alt="" />
-        <TextLink>Name</TextLink>
-      </div>
-      <div className="slider__single">
-        <img src="https://static-01.daraz.com.bd/p/c54fca7fbaf5ff2def40ce7a48edeaad.jpg" alt="" />
-        <TextLink>Name</TextLink>
-      </div>
-      <div className="slider__single">
-        <img src="https://static-01.daraz.com.bd/p/c54fca7fbaf5ff2def40ce7a48edeaad.jpg" alt="" />
-        <TextLink>Name</TextLink>
-      </div>
-      <div className="slider__single">
-        <img src="https://static-01.daraz.com.bd/p/c54fca7fbaf5ff2def40ce7a48edeaad.jpg" alt="" />
-        <TextLink>Name</TextLink>
-      </div>
-      <div className="slider__single">
-        <img src="https://static-01.daraz.com.bd/p/c54fca7fbaf5ff2def40ce7a48edeaad.jpg" alt="" />
-        <TextLink>Name</TextLink>
-      </div>
-      <div className="slider__single">
-        <img src="https://static-01.daraz.com.bd/p/c54fca7fbaf5ff2def40ce7a48edeaad.jpg" alt="" />
-        <TextLink>Name</TextLink>
-      </div>
-      <div className="slider__single">
-        <img src="https://static-01.daraz.com.bd/p/c54fca7fbaf5ff2def40ce7a48edeaad.jpg" alt="" />
-        <TextLink>Name</TextLink>
-      </div>
-      <div className="slider__single">
-        <img src="https://static-01.daraz.com.bd/p/c54fca7fbaf5ff2def40ce7a48edeaad.jpg" alt="" />
-        <TextLink>Name</TextLink>
-      </div>
-    
-      
-    </Slider>
+    <div className="slider__wrap">
+      <Slider {...settings} className="slider">
+        <div className="slider__single">
+          <img
+            src="https://static-01.daraz.com.bd/p/c54fca7fbaf5ff2def40ce7a48edeaad.jpg"
+            alt=""
+          />
+          <TextLink>Name</TextLink>
+        </div>
+        <div className="slider__single">
+          <img
+            src="https://static-01.daraz.com.bd/p/c54fca7fbaf5ff2def40ce7a48edeaad.jpg"
+            alt=""
+          />
+          <TextLink>Name</TextLink>
+        </div>
+        <div className="slider__single">
+          <img
+            src="https://static-01.daraz.com.bd/p/c54fca7fbaf5ff2def40ce7a48edeaad.jpg"
+            alt=""
+          />
+          <TextLink>Name</TextLink>
+        </div>
+        <div className="slider__single">
+          <img
+            src="https://static-01.daraz.com.bd/p/c54fca7fbaf5ff2def40ce7a48edeaad.jpg"
+            alt=""
+          />
+          <TextLink>Name</TextLink>
+        </div>
+        <div className="slider__single">
+          <img
+            src="https://static-01.daraz.com.bd/p/c54fca7fbaf5ff2def40ce7a48edeaad.jpg"
+            alt=""
+          />
+          <TextLink>Name</TextLink>
+        </div>
+        <div className="slider__single">
+          <img
+            src="https://static-01.daraz.com.bd/p/c54fca7fbaf5ff2def40ce7a48edeaad.jpg"
+            alt=""
+          />
+          <TextLink>Name</TextLink>
+        </div>
+        <div className="slider__single">
+          <img
+            src="https://static-01.daraz.com.bd/p/c54fca7fbaf5ff2def40ce7a48edeaad.jpg"
+            alt=""
+          />
+          <TextLink>Name</TextLink>
+        </div>
+        <div className="slider__single">
+          <img
+            src="https://static-01.daraz.com.bd/p/c54fca7fbaf5ff2def40ce7a48edeaad.jpg"
+            alt=""
+          />
+          <TextLink>Name</TextLink>
+        </div>
+        <div className="slider__single">
+          <img
+            src="https://static-01.daraz.com.bd/p/c54fca7fbaf5ff2def40ce7a48edeaad.jpg"
+            alt=""
+          />
+          <TextLink>Name</TextLink>
+        </div>
+        <div className="slider__single">
+          <img
+            src="https://static-01.daraz.com.bd/p/c54fca7fbaf5ff2def40ce7a48edeaad.jpg"
+            alt=""
+          />
+          <TextLink>Name</TextLink>
+        </div>
+      </Slider>
+    </div>
   );
 };
 

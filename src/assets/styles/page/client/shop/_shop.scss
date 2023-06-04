@@ -6,3 +6,9 @@
   display: flex;
   gap: 1rem;
 }
+
+.sidebar__wrap{
+  @include largeTablet{
+    display: none;
+  }
+}
