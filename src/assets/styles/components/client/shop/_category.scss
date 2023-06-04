@@ -1,12 +1,12 @@
 .slider{
     
-    border: $primary-border;
+    border: $secondary-border;
     border-radius: $rounded_md;
     margin: 1rem 0;
     box-shadow: $primary-shadow;
     .slider__single{
         padding: .5rem;
-        border-right: $primary-border;
+        border-right: $secondary-border;
         text-align: center;
         cursor: pointer;
         &:hover{
@@ -18,8 +18,5 @@
             object-position: center;
             margin: auto;
         }
-        // .slider__single:last-child{
-        //     border-right: none;
-        // }
     }
 }

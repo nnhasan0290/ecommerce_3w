@@ -31,7 +31,7 @@ const Sidebar = () => {
           </div>
         </div>
       </div>
-       <Divider></Divider>
+      <Divider></Divider>
       {/* rating */}
       <div className="sidebar__each">
         <Heading sm>Rating</Heading>
@@ -71,7 +71,7 @@ const Sidebar = () => {
             <span>-</span>
             <Input type={"number"} />
           </div>
-          <IconButton icon={<BsPlay size={22} />} />
+          <IconButton icon={<BsPlay size={22} />} color="yellow" />
         </div>
       </div>
     </div>

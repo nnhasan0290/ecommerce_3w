@@ -1,0 +1,32 @@
+.product {
+  padding: 0.5rem;
+  transition: all 0.3s;
+  &:hover {
+    box-shadow: $primary-shadow;
+  }
+  .product__img {
+    object-fit: contain;
+    cursor: pointer;
+  }
+  .product__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    .product__price {
+      // font-size: $fs-large;
+      color: $yellow;
+      font-weight: $fw-bold;
+    }
+    .product__discount {
+      display: flex;
+      gap: 0.5rem;
+      font-size: $fs-small;
+      .product__prev {
+        text-decoration: line-through;
+      }
+    }
+    .product__rating {
+      font-size: $fs-small;
+    }
+  }
+}

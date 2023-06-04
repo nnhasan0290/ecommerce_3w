@@ -19,7 +19,7 @@ function SampleNextArrow(props) {
         zIndex: 1
       }}
     >
-      <IconButton icon={<BsChevronRight />} color={"secondary"} fullRounded />
+      <IconButton icon={<BsChevronRight />} color={"yellow"} fullRounded />
     </div>
   );
 }
@@ -37,7 +37,7 @@ function SamplePrevArrow(props) {
         zIndex:1
       }}
     >
-      <IconButton icon={<BsChevronLeft />} color={"secondary"} fullRounded />
+      <IconButton icon={<BsChevronLeft />} color={"yellow"} fullRounded />
     </div>
   );
 }
