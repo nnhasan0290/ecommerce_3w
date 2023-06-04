@@ -1,28 +1,33 @@
-.products__top__filter {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  .select__area {
+.products__filter_top {
+  .products__top__filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .select__area {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
+
+  .filtered_by {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-  }
-}
-
-.filtered_by {
-  display: flex;
-  align-items: center;
-  gap: .5rem;
-  font-size: $fs-small;
-  .filtered_by_clear {
-    text-transform: uppercase;
-    color: $primary;
-    cursor: pointer;
-    transition: all 0.3s;
-    font-size: 12px;
-    &:hover {
-      text-decoration: underline;
+    font-size: $fs-small;
+    .filtered_by_clear {
+      text-transform: uppercase;
+      color: $primary;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-size: 12px;
+      &:hover {
+        text-decoration: underline;
+      }
     }
+  }
+  @include largeTablet {
+    display: none;
   }
 }
 
@@ -31,4 +36,7 @@
   grid-template-columns: repeat(4, 1fr);
   row-gap: 2rem;
   gap: 1rem;
+  @include largeTablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
