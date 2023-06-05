@@ -7,6 +7,7 @@ import offerBg2 from "../../assets/imgs/client/offerCardBg/banner-3.jpg";
 
 import Button from "../../components/common/Button";
 import ShopByCategory from "../../components/client/shopByCategory/ShopByCategory";
+import TreandingProducts from "../../components/client/treandingProducts/TreandingProducts";
 
 const ClientHome = () => {
   return (
@@ -45,6 +46,10 @@ const ClientHome = () => {
 
       <Wrapper>
         <ShopByCategory />
+      </Wrapper>
+
+      <Wrapper>
+        <TreandingProducts />
       </Wrapper>
     </div>
   );

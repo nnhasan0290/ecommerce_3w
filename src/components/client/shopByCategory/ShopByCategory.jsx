@@ -6,10 +6,7 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 // import required modules
-import { FreeMode, Pagination, Navigation, Autoplay } from "swiper";
-
-import sb1 from "../../../assets/imgs/client/shopByCategory/sb_cat1.jpg";
-import sb2 from "../../../assets/imgs/client/shopByCategory/sb_cat3.jpg";
+import { FreeMode, Navigation, Autoplay } from "swiper";
 
 import shopByCatData from "./shopByCatData";
 
@@ -23,7 +20,7 @@ const ShopByCategory = () => {
       <Swiper
         className="shopByCategory__Container"
         slidesPerView={6}
-        spaceBetween={30}
+        spaceBetween={40}
         freeMode={true}
         loop={true}
         navigation={true}
@@ -34,6 +31,24 @@ const ShopByCategory = () => {
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
+        }}
+        breakpoints={{
+          1024: {
+            slidesPerView: 5,
+            // spaceBetween: 40,
+          },
+          768: {
+            slidesPerView: 4,
+            // spaceBetween: 30,
+          },
+          640: {
+            slidesPerView: 3,
+            // spaceBetween: 20,
+          },
+          340: {
+            slidesPerView: 1,
+            // spaceBetween: 10,
+          },
         }}
       >
         {shopByCatData.map((item, index) => {

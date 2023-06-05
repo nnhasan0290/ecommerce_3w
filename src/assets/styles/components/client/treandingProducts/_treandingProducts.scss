@@ -1,0 +1,103 @@
+.treandingProducts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  gap: 40px;
+
+  .treandingProducts__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      font-size: 25px;
+      font-weight: 700;
+      color: black;
+    }
+  }
+
+  .treandingProducts__container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+    .treandingProducts__card {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid rgb(150, 150, 150);
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+          rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        transform: scale(1.02);
+        transition: all 0.3s ease-in-out;
+      }
+
+      .treandingProducts__card__img {
+        height: 200px;
+        width: 100%;
+        border-radius: 10px;
+        background-color: $green;
+        // border-bottom: 1px solid black;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+          opacity: 85%;
+        }
+      }
+
+      .shoppingCart__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+        padding: 15px 0;
+        box-sizing: border-box;
+
+        svg {
+          font-size: 20px;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            color: $green;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+      }
+
+      .treandingProducts__card__content {
+        display: flex;
+        flex-direction: column;
+
+        gap: 8px;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+
+        // background-color: aquamarine;
+
+        .treandingProducts__card__content__titleText {
+          font-size: 20px;
+          font-weight: 700;
+          color: black;
+        }
+
+        .treandingProducts__card__content__rating {
+          display: flex;
+          gap: 5px;
+        }
+      }
+    }
+  }
+}
