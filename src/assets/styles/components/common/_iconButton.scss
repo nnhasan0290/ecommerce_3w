@@ -33,7 +33,15 @@
     background-color: $secondary;
   }
 }
+.iconButton.yellow {
+  background-color: $yellow-faded;
+  color: $yellow;
+  &:hover {
+    color: white;
+    background-color: $yellow;
+  }
+}
 
-.iconButton.fullRonded{
+.iconButton.fullRonded {
   border-radius: $rounded_full;
 }

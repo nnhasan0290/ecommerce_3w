@@ -1,0 +1,15 @@
+.chip {
+  border-radius: 15px;
+  border: $secondary-border;
+  font-size: $fs-small;
+  padding: 0.2rem .5rem;
+  text-transform: capitalize;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover {
+    background-color: $bg-secondary;
+  }
+}

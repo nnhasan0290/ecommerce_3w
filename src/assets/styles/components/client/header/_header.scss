@@ -17,7 +17,7 @@
       justify-content: center;
       align-items: stretch;
       input {
-        border: none;
+        border: $primary-border;
         background-color: $bg-secondary;
         width: 400px;
         border-radius: $rounded-md 0 0 $rounded-md;
@@ -26,17 +26,16 @@
       span {
         height: 45px;
         width: 45px;
-        background-color: $primary-md-faded;
+        border: $primary-border;
+        background-color: $yellow;
         border-radius: 0 $rounded-md $rounded-md 0;
-        color: white;
+        color: $white;
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
         transition: all 0.3s;
-        &:hover{
-          background-color: $primary;
-        }
+
       }
     }
     .mainHeader_user {
@@ -52,24 +51,30 @@
         white-space: nowrap;
         list-style: none;
         cursor: pointer;
-        &:hover{
-          color: $primary;
+        &:hover {
+          color: $yellow;
           text-decoration: underline;
-          background-color: $bg-secondary
+          background-color: $bg-secondary;
         }
       }
     }
-    .mainHeader__cart{
+    .mainHeader__cart {
       position: relative;
       cursor: pointer;
-      &:hover{
-        color: $primary;
+      color: $yellow;
+      transition: all 0.3s;
+      &:hover {
+        .mainHeader__cart__badge {
+          color: white;
+          background-color: $yellow;
+        }
       }
-      .mainHeader__cart__badge{
+      .mainHeader__cart__badge {
         position: absolute;
         top: 0;
         right: 0;
-        background-color: $primary;
+        background-color: $white;
+        border: $primary-border;
         width: 20px;
         height: 20px;
         display: flex;
@@ -77,7 +82,6 @@
         justify-content: center;
         border-radius: $rounded_full;
         transform: translate(40%, -40%);
-        color: white;
       }
     }
   }
