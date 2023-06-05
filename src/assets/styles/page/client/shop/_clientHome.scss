@@ -75,4 +75,80 @@
       }
     }
   }
+
+  .dealOfTheDay {
+    height: 450px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .dealOfTheDay__container {
+      width: 1170px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      .dealOfTheDay__content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        gap: 15px;
+
+        .dealOfTheDay__content__about {
+          font-size: 22px;
+          font-weight: 700;
+          color: $text-white;
+          text-align: left;
+          margin-bottom: 1rem;
+
+          @include largeMobile {
+            font-size: 20px;
+          }
+        }
+
+        .dealOfTheDay__content__title {
+          font-size: 40px;
+          font-weight: 700;
+          color: $text-white;
+          text-align: left;
+          margin-bottom: 1rem;
+
+          @include largeMobile {
+            font-size: 30px;
+          }
+        }
+
+        .dealOfTheDay__content__timer {
+          display: flex;
+          gap: 15px;
+
+          .dealOfTheDay__content__timer__item {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            gap: 5px;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: $yellow;
+            border-radius: 8px;
+
+            .timer__digit {
+              font-size: 30px;
+              font-weight: 700;
+              color: $text-white;
+            }
+
+            .timer__text {
+              font-size: 18px;
+              font-weight: 700;
+              color: $text-white;
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -24,6 +24,9 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
 
+    padding-bottom: 30px;
+    box-sizing: border-box;
+
     .treandingProducts__card {
       width: 100%;
       display: flex;

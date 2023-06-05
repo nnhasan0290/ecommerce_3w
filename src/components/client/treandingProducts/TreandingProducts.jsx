@@ -23,13 +23,13 @@ const TreandingProducts = () => {
   return (
     <div className="treandingProducts">
       <div className="treandingProducts__header">
-        <span>Treanding Products</span>
+        <span>Trending Products</span>
       </div>
 
       <Swiper
         className="treandingProducts__container"
         slidesPerView={4}
-        spaceBetween={40}
+        spaceBetween={30}
         freeMode={true}
         loop={true}
         navigation={true}
@@ -43,15 +43,15 @@ const TreandingProducts = () => {
         }}
         breakpoints={{
           1024: {
-            slidesPerView: 5,
+            slidesPerView: 4,
             // spaceBetween: 40,
           },
           768: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             // spaceBetween: 30,
           },
           640: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             // spaceBetween: 20,
           },
           340: {
