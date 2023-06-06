@@ -39,7 +39,7 @@
       &:hover {
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
           rgba(0, 0, 0, 0.23) 0px 6px 6px;
-        transform: scale(1.02);
+        // transform: scale(1.02);
         transition: all 0.3s ease-in-out;
       }
 
@@ -69,11 +69,11 @@
         box-sizing: border-box;
 
         svg {
-          font-size: 20px;
+          font-size: 23px;
           transition: all 0.3s ease-in-out;
 
           &:hover {
-            color: $green;
+            color: $yellow;
             transition: all 0.3s ease-in-out;
           }
         }
@@ -99,6 +99,7 @@
         .treandingProducts__card__content__rating {
           display: flex;
           gap: 5px;
+          color: $yellow;
         }
       }
     }

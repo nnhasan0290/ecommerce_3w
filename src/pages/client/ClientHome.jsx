@@ -9,6 +9,8 @@ import Button from "../../components/common/Button";
 import ShopByCategory from "../../components/client/shopByCategory/ShopByCategory";
 import TreandingProducts from "../../components/client/treandingProducts/TreandingProducts";
 import Footer from "../../components/common/Footer";
+import OurProduct from "../../components/client/ourProduct/OurProduct";
+import CustomerReviewCardViewer from "../../components/client/customerReviewCardViewer/CustomerReviewCardViewer";
 
 const ClientHome = () => {
   return (
@@ -87,7 +89,11 @@ const ClientHome = () => {
       </div>
 
       <Wrapper>
-        <TreandingProducts />
+        <OurProduct />
+      </Wrapper>
+
+      <Wrapper>
+        <CustomerReviewCardViewer />
       </Wrapper>
 
       <Footer />
