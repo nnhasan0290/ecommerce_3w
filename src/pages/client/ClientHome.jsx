@@ -7,6 +7,8 @@ import offerBg2 from "../../assets/imgs/client/offerCardBg/banner-3.jpg";
 
 import Button from "../../components/common/Button";
 import ShopByCategory from "../../components/client/shopByCategory/ShopByCategory";
+import TreandingProducts from "../../components/client/treandingProducts/TreandingProducts";
+import Footer from "../../components/common/Footer";
 
 const ClientHome = () => {
   return (
@@ -46,6 +48,49 @@ const ClientHome = () => {
       <Wrapper>
         <ShopByCategory />
       </Wrapper>
+
+      <Wrapper>
+        <TreandingProducts />
+      </Wrapper>
+
+      <div className="dealOfTheDay">
+        <div className="dealOfTheDay__container">
+          <div className="dealOfTheDay__content">
+            <span className="dealOfTheDay__content__about">
+              We offer a hot deal offer every festival
+            </span>
+            <h3 className="dealOfTheDay__content__title">Deal of the day!</h3>
+
+            <div className="dealOfTheDay__content__timer">
+              <div className="dealOfTheDay__content__timer__item">
+                <span className="timer__digit">00</span>
+                <span className="timer__text">Days</span>
+              </div>
+
+              <div className="dealOfTheDay__content__timer__item">
+                <span className="timer__digit">00</span>
+                <span className="timer__text">Hours</span>
+              </div>
+
+              <div className="dealOfTheDay__content__timer__item">
+                <span className="timer__digit">00</span>
+                <span className="timer__text">Mins</span>
+              </div>
+
+              <div className="dealOfTheDay__content__timer__item">
+                <span className="timer__digit">00</span>
+                <span className="timer__text">Sec</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <Wrapper>
+        <TreandingProducts />
+      </Wrapper>
+
+      <Footer />
     </div>
   );
 };
