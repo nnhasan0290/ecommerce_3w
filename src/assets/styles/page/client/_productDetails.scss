@@ -1,0 +1,11 @@
+.productDetails {
+  background-color: $bg-secondary;
+  padding: 1rem;
+  .productDetails__container {
+    background-color: white;
+    display: grid;
+    padding: 1rem;
+    gap: 1rem;
+    grid-template-columns: 1fr 2fr;
+  }
+}

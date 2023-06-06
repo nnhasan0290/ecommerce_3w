@@ -7,6 +7,7 @@ import Auth from "../pages/client/Auth";
 import AuthLayout from "../components/layouts/AuthLayout";
 import ForgotPass from "../pages/client/Auth/ForgotPass";
 import Shop from "../pages/client/Shop";
+import ProductDetails from "../pages/client/ProductDetails";
 
 const Routers = () => {
   return (
@@ -14,6 +15,7 @@ const Routers = () => {
       <Route path="/" element={<ClientLayout />}>
         <Route index element={<ClientHome />}></Route>
         <Route path="shop" element={<Shop />}></Route>
+        <Route path="shop/id" element={<ProductDetails />}></Route>
       </Route>
       <Route path="/auth" element={<AuthLayout />}>
         <Route index element={<Auth />}></Route>

@@ -1,22 +1,26 @@
-.slider{
-    
+.slider__wrap {
+  @include largeTablet {
+    display: none;
+  }
+  .slider {
     border: $secondary-border;
     border-radius: $rounded_md;
     margin: 1rem 0;
     box-shadow: $primary-shadow;
-    .slider__single{
-        padding: .5rem;
-        border-right: $secondary-border;
-        text-align: center;
-        cursor: pointer;
-        &:hover{
-            background-color: $bg-secondary;
-        }
-        img{
-            max-height: 100px;
-            object-fit: contain;
-            object-position: center;
-            margin: auto;
-        }
+    .slider__single {
+      padding: 0.5rem;
+      border-right: $secondary-border;
+      text-align: center;
+      cursor: pointer;
+      &:hover {
+        background-color: $bg-secondary;
+      }
+      img {
+        max-height: 100px;
+        object-fit: contain;
+        object-position: center;
+        margin: auto;
+      }
     }
+  }
 }

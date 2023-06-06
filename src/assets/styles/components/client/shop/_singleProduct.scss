@@ -1,12 +1,17 @@
 .product {
   padding: 0.5rem;
   transition: all 0.3s;
+  @include largeTablet {
+    border: $primary-border;
+    border-radius: $rounded_md;
+  }
   &:hover {
     box-shadow: $primary-shadow;
   }
   .product__img {
     object-fit: contain;
     cursor: pointer;
+    max-width: 100%;
   }
   .product__content {
     display: flex;

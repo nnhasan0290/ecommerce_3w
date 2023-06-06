@@ -7,7 +7,7 @@ import Chip from "../../common/Chip";
 const Products = () => {
   return (
     <div>
-      <div>
+      <div className="products__filter_top">
         <div className="products__top__filter">
           <span>1547 items found here</span>
           <div className="select__area">
@@ -20,8 +20,8 @@ const Products = () => {
           <Chip>chip</Chip>
           <span className="filtered_by_clear">Clear All</span>
         </div>
-      </div>
       <Divider />
+      </div>
       <div className="product__wrap">
         {Array(20)
           .fill(0)
